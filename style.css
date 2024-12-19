@@ -200,19 +200,20 @@ p {
 }
 
 .redes-sociais {
-    display: flex;
+    display: grid;
     gap: 15px;
     justify-content: center;
     margin-top: 20px;
 }
 
 .social-icon {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     gap: 8px;
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
+    margin: 10px;
     background-color: #0080ff;
     padding: 10px 20px;
     border-radius: 8px;
@@ -270,7 +271,7 @@ p {
 }
 
 .developer-credit a:hover {
-    color: #FFD700;
+    color: #02d9ff;
     text-decoration: underline;
 }
 
