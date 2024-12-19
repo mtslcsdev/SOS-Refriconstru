@@ -29,11 +29,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Parágrafos */
-p {
-    color: #EAEAEA;
-}
-
 /* Navbar */
 .navbar {
     display: flex;
@@ -50,6 +45,7 @@ p {
 .menu {
     list-style: none;
     display: flex;
+    margin-right: 30px;
     gap: 15px;
 }
 
@@ -155,13 +151,17 @@ p {
     align-items: center;
     text-align: center;
     padding: 50px 15%;
-    background-color: #142D4D;
+    background-color: #c4d2db;
 }
 
 .sobre-logo {
     display: block;
-    max-width: 300px;
+    max-width: 400px;
     margin: 0 auto 20px;
+}
+
+.sobre h2 {
+    color: black;
 }
 
 .texto-sobre p {
@@ -178,54 +178,66 @@ p {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    text-align: left;
+    justify-content: space-around;
+    align-items: flex-start;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
-.localizacao,
-.contato-footer {
-    flex: 1 1 45%;
+.localizacao {
+    max-width: 45%;
 }
 
 .localizacao iframe {
     width: 100%;
-    border-radius: 5px;
-}
-
-.localizacao p {
-    margin-top: 15px;
-    text-align: center;
-    font-weight: bold;
+    max-width: 400px;
+    height: 300px;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .redes-sociais {
-    display: grid;
-    gap: 15px;
+    display: flex;
     justify-content: center;
-    margin-top: 20px;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .social-icon {
-    /* display: flex; */
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 8px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    margin: 10px;
-    background-color: #0080ff;
-    padding: 10px 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #0078D7;
+    color: white;
     border-radius: 8px;
-    transition: background-color 0.3s ease;
-}
-
-.social-icon i {
-    font-size: 1.5rem;
+    font-size: 24px;
+    transition: 0.3s ease;
+    text-decoration: none;
 }
 
 .social-icon:hover {
-    background-color: #0066cc;
+    background-color: #005fa3;
+}
+
+.informacoes {
+    max-width: 45%;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.informacoes h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #B0E0E6;
+    text-align: left;
+}
+
+.informacoes p {
+    margin: 0 0 10px;
+    color: #EAEAEA;
 }
 
 /* Botão WhatsApp */
@@ -257,21 +269,21 @@ p {
 
 /* Desenvolvedor */
 .developer-credit {
-    background-color: #003366;
-    color: #EAEAEA;
+    background-color: #c4d2db;
+    color: #000000;
     text-align: center;
     padding: 10px 0;
     font-size: 0.9rem;
 }
 
 .developer-credit a {
-    color: #00bbff;
+    color: #093766;
     text-decoration: none;
     font-weight: bold;
 }
 
 .developer-credit a:hover {
-    color: #02d9ff;
+    color: #0051ff;
     text-decoration: underline;
 }
 
@@ -312,14 +324,8 @@ p {
         margin: 10px auto;
     }
 
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .localizacao,
-    .contato-footer {
-        flex: 1 1 100%;
+    .redes-sociais {
+        justify-content: center;
     }
 }
 
