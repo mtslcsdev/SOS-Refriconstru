@@ -226,6 +226,7 @@ h2 {
     max-width: 45%;
     font-size: 14px;
     line-height: 1.6;
+    text-decoration: none;
 }
 
 .informacoes h2 {
@@ -288,19 +289,6 @@ h2 {
 }
 
 /* Responsividade */
-@media (max-width: 1200px) {
-    .cards-produtos {
-        justify-content: space-around;
-    }
-}
-
-@media (max-width: 992px) {
-    .cards-produtos {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-}
-
 @media (max-width: 768px) {
     .navbar .menu {
         display: none;
@@ -324,8 +312,22 @@ h2 {
         margin: 10px auto;
     }
 
-    .redes-sociais {
-        justify-content: center;
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .localizacao {
+        display: none; /* Oculta o mapa */
+    }
+
+    .informacoes, .redes-sociais {
+        margin-right: 300px;
+        text-align: left;
+    }
+
+    .informacoes h2 {
+        text-align: left;
     }
 }
 
@@ -356,3 +358,4 @@ h2 {
         opacity: 1;
     }
 }
+
